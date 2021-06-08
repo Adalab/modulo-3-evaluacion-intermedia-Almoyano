@@ -2,9 +2,9 @@ import React from "react";
 import Pokemon from "./Pokemon";
 
 const PokeList = (props) => {
-  const pokeItems = props.list.map((item) => {
+  const pokeItems = props.list.map((item, index) => {
     return (
-      <li>
+      <li key={index}>
         <Pokemon item={item} />
       </li>
     );
